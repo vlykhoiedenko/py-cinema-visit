@@ -14,8 +14,7 @@ package create modules:
    This class should have only one static method `sell_product`,
    that takes `product` - name of the product that customer wants
    and `customer` - `Customer` instance, that means customer.
-   `sell_product` method is responsible to sell product to customer, 
-   and it prints what product and to whom cinema sold.
+   The `sell_product` method sells a product to the customer and displays which product was sold and to whom.
    
    
    ```python
@@ -27,8 +26,7 @@ package create modules:
 
    - `hall.py` - inside this module create `CinemaHall`
    class that describes actions during the movie session. Its
-   `__init__` method takes and stores `number` and only - 
-   number of the hall in cinema.
+   `__init__` method takes and stores ONLY the `number `of the hall in the cinema.
    This class should have only one method `movie_session`, that
    takes `movie_name`, `customers` - list of a customers
    (`Customer` instances), `cleaning_staff` - cleaner (`Cleaner` 
@@ -72,12 +70,12 @@ customer, `hall_number` - number of the hall in cinema,
 `cleaner` - name of the cleaner, that will clean the
 hall after movie session.
 
-This function should create `Customer` instances, instance of `CinemaHall`,
-instance of `Cleaner`. First, cinema bar should sell food to
-customers, and in order to do it you can use `CinemaBar` class without creation of its instance,
-then cinema hall should make a movie session and finally cleaner
-cleans cinema hall. We are expecting that each class already can work with provided data
-(can accept parameters in the correct order, has needed methods. No need to additional checks and error handling.)
+This function should create instances of `Customer`, `CinemaHall`, and `Cleaner`.
+First, the cinema bar should sell food to customers. To do this, you can use the `CinemaBar`
+class without creating an instance. Then, the cinema hall should schedule a movie session,
+and finally, a cleaner should clean the cinema hall.  We expect each class to work with the provided data,
+accepting parameters in the correct order and having the necessary methods.
+No additional checks or error handling are needed!
 
 Example (do not add it to `main.py`): 
 ```python
@@ -98,6 +96,7 @@ cinema_visit(customers=customers, hall_number=hall_number, cleaner=cleaner_name,
 # Cleaner Anna is cleaning hall number 5.
 ```
 
-**NOTE**: Each method which is responsible to perform something should just print a message using `print()` function.
-No need to return something or use `logging` module. Finally, check your code using this [checklist](checklist.md)
-before pushing your solution.
+**Important Note**: Each method responsible for performing a task should only print a message using
+the `print()` function. There is no need to return anything or use the `logging` module.
+
+Finally, check your code using this [checklist](checklist.md) before pushing your solution.
